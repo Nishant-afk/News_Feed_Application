@@ -1,48 +1,59 @@
 
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
 body{
-    background-image: url("././images/bg2.jpg");
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    background-color: #11034a;
 }
 
-.header{
-    text-align: center;
+.navbar-custom {
+    background-color: maroon;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
     color: white;
+
+    
+}
+
+.navbar-custom .navbar-text:hover {
+    color: black;
     text-decoration: underline white;
-    text-shadow: 2px 2px 4px #000000;
+    
 }
 
-nav {
-    padding-top: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-nav ul{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: 	#800000 ;
-}
-
-nav li{
-    float: left;
-    display: block;
+a.nav-link{
     color: white;
-    padding: 12px 15px;
+    
 }
 
-nav li:hover{
-    background-color: 	#282828;
-    border: 1px solid white;
+a.nav-link:active {
+    color: black;
+    background-color: white;
+}
+
+a.nav-link:focus{
+    color: black;
+    background-color: white;
+}
+
+a.nav-link:hover {
+    color: black;
+    text-decoration: underline white;
+    padding-bottom: 3px;
+    line-height: 1.5;
+}
+
+.search-btn-custom{
+    background-color: white;
+    color:black;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 250px;
+}
+
+.search-btn-custom:hover{
+    background-color: black;
     color: white;
 }
+
+
