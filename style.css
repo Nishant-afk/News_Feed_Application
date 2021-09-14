@@ -2,6 +2,22 @@
     margin: 0%;
     padding:0%
 }
+
+.card{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 35rem;
+
+}
+
+.card-footer{
+    position:absolute;
+      bottom:0;
+      width:100%;
+}
+
 body{
     background-color: #11034a;
 }
@@ -12,9 +28,7 @@ body{
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: white;
-
-    
+    color: white;   
 }
 
 .navbar-custom .navbar-text:hover {
@@ -63,5 +77,3 @@ a.nav-link:hover {
     margin-right: 15px;
     margin-top: 5px;
 }
-
-
