@@ -11,27 +11,43 @@ xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&apiKey=455a87c9
 //xhr.getResponseHeader('Content-type', 'application/json');
 
 xhr.onload = function () {
-    if(this.status === 200){
+    if (this.status === 200) {
 
         let json = JSON.parse(this.responseText);
+        let articles = json.articles;
+        let newshtml = "";
         console.log(json);
+        articles.forEach(function (element) {
+            news = 
+            '<div class="col-lg-4 d-flex">' +
+                '<div class="card flex-fill">' +
+                '<img class="card-img-top img-fluid" src="' +
+                element["urlToImage"] +
+                '" alt="Card image cap">' +
+                '<div class ="card-body flex-fill">' +
+                '<h4 class ="card-title"><a href=" ' +
+                element["url"] +
+                '" target="_blank" rel="noopener noreferrer">' +
+                element["title"] +
+                '</a></h4>' +
+                '<p class ="card-text"> ' +
+                element["description"] +
+                '</p> ' + 
+                '<div class="card-footer text-muted"> ' +
+                element["publishedAt"]  +
+                '</div> ' +
+                '</div>' +
+                '</div> ' +
+            '</div>';
+            //console.log(articles[news]);
+ 
+            newshtml += news;
+        });
+        newsdisp.innerHTML = newshtml;
     }
-    else{
+    else {
         console.log("Some error occured");
     }
 }
 
 xhr.send()
-/*
-let news = '
-<div class= "thumbnail"; style="border: none; background: white; "> \
-    <div div class="col-sm-6 col-md-6 col-xs-12 image-container" > \
-        <img src="images/online_learning.jpg" style="height:200px; margin-left:-15px;" /> \
-        <div class="col-sm-6 col-md-6 col-xs-12"> \
-            <h3></h3> \
-            <p style="font-size:10px; color:#03225C;"> \
-            </p> \
-        </div> \
-    </div> \
-</div>';
-*/
