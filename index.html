@@ -26,28 +26,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Latest</a>
+            <a class="nav-link active" aria-current="page" onclick="latest()" href="#">Latest</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Covid</a>
+            <a class="nav-link" onclick="virus ()" href="#">Covid</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Politics</a>
+            <a class="nav-link" onclick="politics()" href="#">Politics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Entertainment</a>
+            <a class="nav-link" onclick="entertainment()" href="#">Entertainment</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" onclick="science()" href="#">Science</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Science</a>
+            <a class="nav-link" onclick="business()" href="#">Business</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Business</a>
+            <a class="nav-link" onclick="sports ()" href="#">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">World</a>
+            <a class="nav-link" onclick="world()" href="#">World</a>
           </li>
         </ul>
 
@@ -67,7 +68,8 @@
     </div>
   </div>
 
-
+  <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="Scripts/bootstrap.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
