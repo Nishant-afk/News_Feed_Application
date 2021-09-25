@@ -115,19 +115,16 @@ function searchresult() {
     xhr.send();
 }
 
-window.onload = function () {
-    topnews();
-}
 
 function sports() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=sports&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -169,21 +166,18 @@ function sports() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function virus() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=Covid&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=Covid&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
     xhr.onload = function () {
         if (this.status === 200) {
 
@@ -224,21 +218,18 @@ function virus() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function politics() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=politics&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=politics&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
     xhr.onload = function () {
         if (this.status === 200) {
 
@@ -279,21 +270,18 @@ function politics() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function entertainment() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=movies&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
 
 
     xhr.onload = function () {
@@ -336,22 +324,19 @@ function entertainment() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function science() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=science&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
-    
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
+
     xhr.onload = function () {
         if (this.status === 200) {
 
@@ -392,21 +377,18 @@ function science() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function business() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=business&apiKey=455a87c940c341c08bdc416a2ec50bc0', true); 
-    
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -448,21 +430,18 @@ function business() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 
 function world() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=international&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=international&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
     xhr.onload = function () {
         if (this.status === 200) {
 
@@ -503,20 +482,17 @@ function world() {
         }
     }
     xhr.send();
-}
-window.onload = function () {
-    topnews();
 }
 function latest() {
-    
+
     console.log("successfully open");
 
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
-      //Create a ajax get request
+    //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://newsapi.org/v2/everything?q=new&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
-    
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=new&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+
     xhr.onload = function () {
         if (this.status === 200) {
 
@@ -558,6 +534,7 @@ function latest() {
     }
     xhr.send();
 }
+
 window.onload = function () {
     topnews();
 }
