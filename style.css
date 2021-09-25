@@ -60,6 +60,11 @@ a.nav-link:hover {
     line-height: 1.5;
 }
 
+.nav-item{
+    padding-left:15px;
+    padding-right:15px;
+}
+
 .search-btn-custom{
     background-color: white;
     color:black;
@@ -77,4 +82,24 @@ a.nav-link:hover {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 5px;
+}
+
+.fas:focus{
+    color: black;
+}
+
+.card-text{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.card-title{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
