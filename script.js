@@ -3,8 +3,6 @@ let apikey = "455a87c940c341c08bdc416a2ec50bc0";
 function topnews() {
     console.log("successfully open");
 
-
-
     //Grab news container
     let newsdisp = document.getElementById('newsdisp');
 
