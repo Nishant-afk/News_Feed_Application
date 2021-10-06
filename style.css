@@ -55,9 +55,10 @@ a.nav-link:focus{
 
 a.nav-link:hover {
     color: white;
-    text-decoration: underline white;
-    padding-bottom: 3px;
+    text-decoration: underline 2px white;
     line-height: 1.5;
+    text-underline-offset: 4px;
+    transition: 300ms ease;
 }
 
 .nav-item{
@@ -100,6 +101,24 @@ a.nav-link:hover {
     overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
-   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-line-clamp: 3; /* number of lines to show */
    -webkit-box-orient: vertical;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    border: solid white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+footer li:hover{
+    cursor: pointer;
+    color: black;
+    text-decoration: underline solid 3px maroon;
+    
 }
