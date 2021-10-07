@@ -116,9 +116,19 @@ footer{
     -webkit-transition: 300ms;
 }
 
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: black;
+    text-decoration: underline solid 3px maroon;
+}
 footer li:hover{
     cursor: pointer;
     color: black;
     text-decoration: underline solid 3px maroon;
     
 }
+
