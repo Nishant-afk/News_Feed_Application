@@ -60,3 +60,27 @@ function US(){
     url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=455a87c940c341c08bdc416a2ec50bc0';
     disp_changes(url);
 }
+
+function Bollywood(){
+
+    url = 'https://newsapi.org/v2/everything?domains=pinkvilla.com,filmibeat.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function Hollywood(){
+
+    url = 'https://newsapi.org/v2/everything?domains=hollywoodlife.com,tmz.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function Celebrity(){
+
+    url = 'https://newsapi.org/v2/everything?domains=people.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function Tele(){
+
+    url = 'https://newsapi.org/v2/everything?domains=tellychakkar.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
