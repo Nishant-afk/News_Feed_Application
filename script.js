@@ -1,5 +1,6 @@
 let apikey = "455a87c940c341c08bdc416a2ec50bc0";
 
+
 function topnews() {
     console.log("successfully open");
 
@@ -531,6 +532,10 @@ function latest() {
         }
     }
     xhr.send();
+}
+
+function opening(){
+    
 }
 
 window.onload = function () {
