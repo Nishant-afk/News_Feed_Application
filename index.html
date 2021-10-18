@@ -16,85 +16,101 @@
 </head>
 
 <body>
-  <div class="sticky-top">
-    <nav class="navbar navbar-custom sticky-top navbar-expand-lg">
-      <a class="navbar-brand" href="#"><span class="badge rounded-pill bg-light text-dark">News Hub <i
-            class="far fa-newspaper"></i></span></a>
-      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" onclick="latest()" href="#">Latest <i
-                class="fas fa-exclamation"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="virus ()" href="#">Covid <i class="fas fa-user-md"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="politics()" href="#">Politics <i class="fas fa-landmark"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="entertainment()" href="#">Entertainment <i class="fas fa-film"></i></a>
-          </li>
+  <div id="page 1">
+    <div>
 
-          <li class="nav-item">
-            <a class="nav-link" onclick="science()" href="#">Science <i class="fas fa-rocket"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="business()" href="#">Business <i class="fas fa-briefcase"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="sports ()" href="#">Sports <i class="fas fa-running"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="world()" href="#">World <i class="fas fa-globe"></i></a>
-          </li>
-        </ul>
+    </div>
+  </div>
+
+  <div id="page 2">
+    <div class="sticky-top">
+      <nav class="navbar navbar-custom sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="#"><span class="badge rounded-pill bg-light text-dark">News Hub <i
+              class="far fa-newspaper"></i></span></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" onclick="latest()" href="#">Latest <i
+                  class="fas fa-exclamation"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="virus ()" href="#">Covid <i class="fas fa-user-md"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="politics()" href="#">Politics <i class="fas fa-landmark"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="entertainment()" href="#">Entertainment <i class="fas fa-film"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" onclick="science()" href="#">Science <i class="fas fa-rocket"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="business()" href="#">Business <i class="fas fa-briefcase"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="sports ()" href="#">Sports <i class="fas fa-running"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="world()" href="#">World <i class="fas fa-globe"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      <div class="s-space sticky-top">
+        <form class="d-flex">
+          <input class="form-control me-2" autocomplete="off" type="search" placeholder="Search" aria-label="Search"
+            id="search_text">
+          <button class="search-btn-custom" type="button" onclick="searchresult()">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row" id="newsdisp">
 
       </div>
-    </nav>
-    <div class="s-space sticky-top">
-      <form class="d-flex">
-        <input class="form-control me-2" autocomplete="off" type="search" placeholder="Search" aria-label="Search"
-          id="search_text">
-        <button class="search-btn-custom" type="button" onclick="searchresult()">Search</button>
-      </form>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row" id="newsdisp">
-
-    </div>
-  </div>
-
-  <hr style="color: white;">
-  <div class="sticky-bottom">
-    <footer class="container blue">
+    <hr style="color: white;">
+    <div class="sticky-bottom">
+      <footer class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6">
-              <ul>
-                <li>
-                  <a>About Us</a>
-                </li>
-                <li>
-                  <a>Privacy Policy</a>
-                </li>
-                <li>
-                  <a>Feed Back</a>
-                </li>
-                <hr>
-                <li style="list-style: none;">
-                  Sources
-                </li>
-                <li>
-                  <a>- Tech Crunch</a>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal1">About Us</a>
+              </li>
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal3">Feed Back</a>
+              </li>
+              <hr>
+              <li style="list-style: none;">
+                Sources
+              </li>
+              <li>
+                <a onclick="techCrunch()" href="#">- Tech Crunch</a>
+              </li>
+              <li>
+                <a onclick="NDTV()" href="#">- NDTV</a>
+              </li>
+              <li>
+                <a onclick="MahaTimes()" href="#">- Maharashtra Times(Marathi)</a>
+              </li>
+              <li>
+                <a onclick="DB()" href="#">- Dainik Bhaskar(Hindi)</a>
+              </li>
+            </ul>
           </div>
           <div class="col-lg-4 col-md-6">
             <ul>
@@ -102,10 +118,10 @@
                 Covid-19
               </li>
               <li>
-                <a>- India</a>
+                <a onclick="C_India()" href="#">- India</a>
               </li>
               <li>
-                <a>- World</a>
+                <a onclick="C_World()" href="#">- World</a>
               </li>
               <hr>
               <li style="list-style: none;">
@@ -115,40 +131,149 @@
                 <a onclick="US()" href="#">- US</a>
               </li>
               <li>
-                <a>- Australia</a>
+                <a onclick="Australia()" href="#">- Australia</a>
               </li>
               <li>
                 <a onclick="UK()" href="#">- UK</a>
               </li>
               <li>
-                <a>- Korea</a>
+                <a onclick="Korea()" href="#">- Korea</a>
               </li>
               <li>
-                <a>- South Africa</a>
+                <a onclick="South_Africa()" href="#">- South Africa</a>
               </li>
             </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul>
+              <li style="list-style: none;">
+                Entertainment
+              </li>
+              <li>
+                <a onclick="Bollywood()" href="#">- Bollywood</a>
+              </li>
+              <li>
+                <a onclick="Hollywood()" href="#">- Hollywood</a>
+              </li>
+              <li>
+                <a onclick="Celebrity()" href="#">- Celebrity</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <ul>
-            <li style="list-style: none;">
-              Entertainment
-            </li>
-            <li>
-              <a onclick="Bollywood()" href="#">- Bollywood</a>
-            </li>
-            <li>
-              <a onclick="Hollywood()" href="#">- Hollywood</a>
-            </li>
-            <li>
-              <a onclick="Celebrity()" href="#">- Celebrity</a>
-            </li>
-            <li>
-              <a onclick="Tele()" href="#">- Television</a>
-            </li>
-          </ul>
+      </footer>
+
+      <!-- Modal -->
+      <div class="modal" tabindex="-1" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">About Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Welcome to News Hub ,your number one source for all the latest news and articles. We're dedicated to
+                giving you the very best of news, with a focus on dependable and best sources out there.
+                <br>
+                <br>
+                Founded in 2021 has come a long way from its beginnings in. When we first started out, the passion for
+                helping users for providing the best and latest news and articles. and drove us the impetus to turn hard
+                work and inspiration into to this booming online website. We now are available to users all over world
+                and are thrilled to be a part of the righteous wing of the online news website industry.
+                <br>
+                <br>
+                We hope you enjoy our website as much as we enjoy offering them to you. If you have any questions or
+                comments, please don't hesitate to contact us.
+
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="modal" tabindex="-1" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Privacy Policy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We build a range of services that help millions of people daily to explore and interact with the world
+                in new ways. We use the information we collect from all our services for the following purposes:
+                <br>
+                <br>
+              <h6>Provide our services</h6>
+              We use your information to deliver our services, like processing the terms you search for in order to
+              return results or helping you share content by suggesting recipients from your contacts.
+              <br>
+              <br>
+              <h6>Maintain & improve our services</h6>
+              We also use your information to ensure our services are working as intended, such as tracking outages or
+              troubleshooting issues that you report to us. And we use your information to make improvements to our
+              services — for example, understanding which search terms are most frequently misspelled helps us improve
+              spell-check features used across our services.
+              <br>
+              <br>
+              <h6>Develop new services</h6>
+              We use the information we collect in existing services to help us develop new ones. For example,
+              understanding how people organized their photos in Picasa, Google’s first photos app, helped us design
+              and launch Google Photos.
+              <br>
+              <br>
+              <h6>Provide personalized services, including content and ads</h6>
+              We use the information we collect to customize our services for you, including providing
+              recommendations, personalized content, and customized search results. For example, Security Checkup
+              provides security tips adapted to how you use Google products. And Google Play uses information like
+              apps you’ve already installed and videos you’ve watched on YouTube to suggest new apps you might like.
+              Depending on your settings, we may also show you personalized ads based on your interests. For example,
+              if you search for “mountain bikes,” you may see an ad for sports equipment when you’re browsing a site
+              that shows ads served by Google. You can control what information we use to show you ads by visiting
+              your ad settings.
+              <br>
+              <br>
+              • We don’t show you personalized ads based on sensitive categories, such as race, religion, sexual
+              orientation, or health.
+              <br>
+              • We don’t show you personalized ads based on your content from Drive, Gmail, or Photos.
+              <br>
+              • We don’t share information that personally identifies you with advertisers, such as your name or
+              email, unless you ask us to. For example, if you see an ad for a nearby flower shop and select the “tap
+              to call” button, we’ll connect your call and may share your phone number with the flower shop.
+
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <div class="modal" tabindex="-1" id="myModal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Feedback</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                If you find any disrupt or any corrections, suggestions or if any improvement is needed to write us back
+                on nsa@news_hub.com We will be very happy to hear from you.
+                <br>
+                <br>
+                If you want to appreciate us or bring some news under our consideration do write us on nsa@news_hub.com.
+                <br>
+                <br>
+                In the mail kindly specify your name with correct email address and phone number. We will reach back to
+                you within 24 hours. Thank you for using are services
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-------
