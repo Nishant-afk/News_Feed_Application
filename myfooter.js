@@ -50,17 +50,6 @@ function disp_changes(myurl){
     xhr.send()
 }
 
-function UK(){
-    url = 'https://newsapi.org/v2/top-headlines?country=gb&apiKey=455a87c940c341c08bdc416a2ec50bc0';
-    disp_changes(url);
-}
-
-function US(){
-
-    url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=455a87c940c341c08bdc416a2ec50bc0';
-    disp_changes(url);
-}
-
 function Bollywood(){
 
     url = 'https://newsapi.org/v2/everything?domains=pinkvilla.com,filmibeat.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
@@ -79,8 +68,59 @@ function Celebrity(){
     disp_changes(url);
 }
 
-function Tele(){
+function UK(){
+    url = 'https://newsapi.org/v2/top-headlines?country=gb&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
 
-    url = 'https://newsapi.org/v2/everything?domains=tellychakkar.com&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+function US(){
+
+    url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+
+function Australia(){
+    url = 'https://newsapi.org/v2/top-headlines?country=au&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function Korea(){
+    url = 'https://newsapi.org/v2/top-headlines?country=kr&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function South_Africa(){
+    url = 'https://newsapi.org/v2/top-headlines?country=za&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function C_India(){
+    url = 'https://newsapi.org/v2/top-headlines?country=in&category=health&q=covid&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function C_World(){
+    url = 'https://newsapi.org/v2/top-headlines?category=health&q=covid&apiKey=455a87c940c341c08bdc416a2ec50bc0';
+    disp_changes(url);
+}
+
+function techCrunch(){
+    url = 'https://newsapi.org/v2/everything?domains=techcrunch.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
+
+function NDTV(){
+    url = 'https://newsapi.org/v2/everything?domains=ndtv.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
+
+function DB(){
+    url = 'https://newsapi.org/v2/everything?domains=bhaskar.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
+
+function MahaTimes(){
+    url = 'https://newsapi.org/v2/everything?domains=maharashtratimes.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
     disp_changes(url);
 }
