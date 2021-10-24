@@ -541,3 +541,4 @@ function opening(){
 window.onload = function () {
     topnews();
 }
+
