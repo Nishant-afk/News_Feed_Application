@@ -124,3 +124,18 @@ function MahaTimes(){
     url = 'https://newsapi.org/v2/everything?domains=maharashtratimes.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
     disp_changes(url);
 }
+
+function Stock_Market(){
+    url = 'https://newsapi.org/v2/everything?domains=marketwatch.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
+
+function BT(){
+    url = 'https://newsapi.org/v2/everything?domains=businesstoday.in&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
+
+function Crypto_news(){
+    url = 'https://newsapi.org/v2/everything?domains=coindesk.com&apiKey=455a87c940c341c08bdc416a2ec50bc0'
+    disp_changes(url);
+}
