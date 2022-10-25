@@ -1,4 +1,4 @@
-let apikey = "455a87c940c341c08bdc416a2ec50bc0";
+let apikey = "<Your_News_API_key>";
 
 
 function topnews() {
@@ -9,7 +9,7 @@ function topnews() {
 
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&apiKey=<Your_News_Api_Key>', true);
     //xhr.getResponseHeader('Content-type', 'application/json');
 
     xhr.onload = function () {
@@ -123,7 +123,7 @@ function sports() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=<Your_News_Api_Key>', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -175,7 +175,7 @@ function virus() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/everything?q=Covid&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=Covid&apiKey=<Your_News_Api_Key>', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -227,7 +227,7 @@ function politics() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/everything?q=politics&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=politics&apiKey=<Your_News_Api_Key>', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -279,7 +279,7 @@ function entertainment() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=<Your_News_Api_Key>', true);
 
 
 
@@ -333,7 +333,7 @@ function science() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=<Your_News_Api_Key>', true);
 
 
     xhr.onload = function () {
@@ -386,7 +386,7 @@ function business() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=<Your_News_Api_Key>', true);
 
 
     xhr.onload = function () {
@@ -439,7 +439,7 @@ function world() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/everything?q=international&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=international&apiKey=<Your_News_Api_Key>', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
@@ -490,7 +490,7 @@ function latest() {
     let newsdisp = document.getElementById('newsdisp');
     //Create a ajax get request
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://newsapi.org/v2/everything?q=new&apiKey=455a87c940c341c08bdc416a2ec50bc0', true);
+    xhr.open('GET', 'https://newsapi.org/v2/everything?q=new&apiKey=<Your_News_Api_Key>', true);
 
     xhr.onload = function () {
         if (this.status === 200) {
